@@ -4,12 +4,23 @@ import { createRoot } from "react-dom/client";
 import { ThemeInit } from "../.flowbite-react/init";
 import App from "./App.tsx";
 import "./index.css";
+import { BrowserRouter } from "react-router-dom";
 
-createRoot(document.getElementById("root")!).render(
+const container = document.getElementById("root");
+
+if (!container) {
+  throw new Error("React root element doesn't exist!");
+}
+const root = createRoot(container);
+
+
+root.render(
   <StrictMode>
     <ThemeInit />
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
-);
+)
 
 initThemeMode();
