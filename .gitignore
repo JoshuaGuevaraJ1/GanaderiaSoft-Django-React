@@ -1,0 +1,53 @@
+# Virtual environment
+venv/
+.env
+
+# Local settings file
+local_settings.py
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.pyc
+
+# Database files
+*.sqlite3
+*.db
+*.sqlite
+*.sqlite3-journal
+*.db-journal
+
+# Logs
+*.log
+*.pot
+
+# Testing files
+.tox/
+.coverage
+.cache/
+.pytest_cache/
+htmlcov/
+pip-log.txt
+
+# Static files
+staticfiles/
+media/
+
+# IDEs and editors
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# MacOS
+.DS_Store
