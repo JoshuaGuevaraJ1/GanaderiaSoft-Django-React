@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     # Installed apps for REST framework and CORS handling
     'rest_framework',
     'corsheaders',
+    'catalogs',
 ]
 
 MIDDLEWARE = [
